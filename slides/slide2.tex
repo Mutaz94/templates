@@ -1,0 +1,70 @@
+% ----------------------------------------
+% Slides templates
+%----------------------------------------
+% $ latexmk -pdflatex=lualatex -pdf slide.tex
+%----------------------------------------
+% Version 2 
+
+
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{xfrac}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{etoolbox} 
+
+
+% Define colors 
+
+\definecolor{maroon}{RGB}{122,0,25}
+\definecolor{gold}{RGB}{255,204,51}
+\definecolor{blue2}{RGB}{0,52,98} 
+
+\setsansfont{Helvetica Neue}[BoldFont=Helvetica Neue Condensed Bold]
+\setlength{\parskip}{2ex} 
+% Create template presentation 
+
+\mode<presentation>
+{%
+    \usetheme{default}
+    \setbeamertemplate{navigation symbols}{}
+    \setbeamercolor{titlelike}{fg=blue2}
+    \useinnertheme[shadow=true]{rounded}
+    \setbeamercolor{item projected}{fg=blue2, bg=blue2!20}
+    \setbeamertemplate{blocks}[rounded][shadow=true]
+    \setbeamertemplate{footlines}{}
+    \setbeamertemplate{title page}{%
+        \vspace{2cm}
+        {\color{white}\rule{\textwidth}{0.4mm}}\vspace{1.7em}
+        \color{white}{\fontsize{18pt}{10}\selectfont \textbf{\inserttitle}}
+        \vspace{2ex}
+        {\color{white}\rule{\textwidth}{0.4mm}}\vspace{1.7em}
+        \color{white}{\fontsize{10pt}{2pt} \textbf{\insertauthor}}
+        ~\\
+        \hspace{1mm}\color{white}{\fontsize{8pt}{2pt}\selectfont \insertinstitute}
+        ~\\
+        \hspace{1mm}\color{white}{\fontsize{6pt}{2pt}\selectfont \insertdate} 
+        }
+}
+
+\title{Investigating the Contribution of Residual Unexplained Variability Components in NLME Approach}
+\author{Mutaz M. Jaber, PharmD}
+\institute{Dept. of Experimental and Clinical pharmacology} 
+\date{Nov 24th, 2021}
+
+\begin{document}
+\setbeamercolor{background canvas}{bg=blue2}
+\begin{frame}
+\titlepage
+\end{frame}
+\setbeamercolor{background canvas}{bg=}
+\begin{frame}{\textbf{Title slide}}
+
+\end{frame} 
+\end{document}
+
+
